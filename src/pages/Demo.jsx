@@ -21,9 +21,7 @@ export const Demo = () => {
 
     if (!store.contacts || store.contacts.length === 0) return;
 
-    const existing = store.contacts.find(
-      (c) => String(c.id) === String(id)
-    );
+    const existing = store.contacts.find((c) => c.id === id);
 
     if (!existing) return;
 
